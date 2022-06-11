@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background-color:#ececec;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 10px;
+    border: 20px solid #333333;
+    background-color: #333333;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.gameDisplay {
+    position: absolute;
+    text-align: center;  
+    background-color: #ece7ee;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;  
+    border: 10px solid #333333;
+}
+
+.gameTitle {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 1.2rem;
+    padding-top: 4.7rem;
+}
+  
+.original {
+    font-family: verdana, sans-serif;
+    font-size: 1.1rem;
+    margin-left: -0.7rem;
+    vertical-align: top;
+}
+  
+.gameScore { 
+    display: flex;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.scoreJogador, .recordJogador {
+    background-color: #32050c;
+    color: #dc0d29;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 55px;
+    height: 30px;    
+    border: 2px solid #dc0d29;
+    border-radius: 20%;   
+}
+  
+.label {    
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.icon {
+    font-size: 2.5em;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration:none;
+    color: #333333;
+    width: 50px;
+}
+
+.record {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
